@@ -71,6 +71,7 @@ Puppet::Type.type(:docker_network).provide(:ruby) do
         subnet: subnet,
         ensure: :present,
         driver: driver,
+        options: obj['Options'],
       )
     end
   end
